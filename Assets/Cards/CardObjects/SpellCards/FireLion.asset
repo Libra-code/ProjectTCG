@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a413de7db81684b9f07cf51aaffdcf, type: 3}
+  m_Name: FireLion
+  m_EditorClassIdentifier: 
+  name: FireLion
+  desc: Deal 4 damage, then gain +4 armor
+  mana: 2
+  attack: 4
+  armorValue: 4
+  art: {fileID: 21300000, guid: 870f4c3a9402ea04b984ef134ad0e119, type: 3}
+  spellObject: {fileID: 11400000, guid: 7d54f4ec63b74964c9bf81dfa13a97b3, type: 2}

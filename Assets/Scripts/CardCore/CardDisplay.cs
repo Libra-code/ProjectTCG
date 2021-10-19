@@ -37,19 +37,13 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         if (EventSystem.current.IsPointerOverGameObject())
         {
-
             if (activated)
             {
                 GetComponentInParent<GridLayoutGroup>().padding.top = 745;
                 LayoutRebuilder.MarkLayoutForRebuild(rect);
             }
-
-
         }
-
         //Debug.Log("Mouse over: " + card.name);
-
-
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -58,20 +52,14 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         if (activated)
         {
             GetComponentInParent<GridLayoutGroup>().padding.top = 1225;
-
             LayoutRebuilder.MarkLayoutForRebuild(rect);
         }
-
-
-
-
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (EventSystem.current.IsPointerOverGameObject())
         {
-
             CardManager.Instance.UseCard(Card, this.gameObject);
         }
 

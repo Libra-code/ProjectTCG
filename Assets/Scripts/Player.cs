@@ -118,9 +118,21 @@ public class Player : MonoBehaviour
             TotalArmor = 0;
             UIManager.Instance.TogglePlayerArmor(false);
 
-        }
-
+        } 
+        
         Debug.Log($"Armor {TotalArmor}");
+
+        if (currHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        UIManager.Instance.FadeInLevelPanel();
+        Player.Instance.Gold -= (10 + (LevelManager.Instance.LevelIndex * 5));
+        
     }
 
     public void UpdateArmor(int armorVal)
