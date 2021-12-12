@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireLion
   m_EditorClassIdentifier: 
   name: FireLion
-  desc: Deal 4 damage, then gain +4 armor
+  desc: Deal 4 damage, then gain +4 armor.
   mana: 2
   attack: 4
   armorValue: 4
