@@ -4,3 +4,6 @@ ProjectTCG - Framework for a card game, UNITY, C#
 
 Demonstration video
 https://youtu.be/jj4p57kzJFI
+Video created by original production
+
+Credit for this version is Libra-code
